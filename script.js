@@ -41,7 +41,8 @@ const showError = message => {
 };
 
 let neighbours;
-
+// have no idea
+// let s
 const getCountryDataByName = async country => {
   try {
     const response = await fetch(
@@ -53,7 +54,7 @@ const getCountryDataByName = async country => {
     if (!data[0].borders) data[0].borders = 'No any Neighbours 🏝';
     neighbours = data[0].borders;
 
-    // console.log(neighbours[0]);
+    console.log(neighbours[0]);
 
     // console.log(data[0]);
     showCountry(data[0]);
